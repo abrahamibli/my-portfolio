@@ -26,6 +26,8 @@
 
 body {
     padding-bottom: 40px;
+    background: rgb(85,142,143);
+background: linear-gradient(0deg, rgba(85,142,143,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .card-image {
@@ -33,25 +35,46 @@ body {
     object-fit: cover;
 }
 
-a.middle
-{
+a.middle {
     position: relative;
 }
 
 a.middle:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
 }
 
 a.middle:hover:before {
     visibility: visible;
     transform: scaleX(1);
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-img {
+        display: none;
+    }
+
+    .main-body {
+        margin-top: 20px;
+    }
+
+    .pt-65 {
+        padding-top: 20px;
+    }
+
+    .row-separation-mobile {
+        padding-top: 20px;
+    }
+}
+
+.row-separation {
+    padding-top: 20px;
 }
