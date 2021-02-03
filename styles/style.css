@@ -1,0 +1,39 @@
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pt-65 {
+    padding-top: 65px;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding-bottom: 40px;
+}
+
+.card-image {
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu-text:hover {
+    text-decoration: underline;
+    animation-duration: 1s;
+}
